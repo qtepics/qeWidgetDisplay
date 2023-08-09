@@ -1,6 +1,6 @@
 # $File: //ASP/tec/gui/qeWidgetDisplay/trunk/qeWidgetDisplayApp/project/QEWidgetDisplayApp.pro $
-# $Revision: #3 $
-# $DateTime: 2017/07/07 12:01:14 $
+# $Revision: #4 $
+# $DateTime: 2023/08/09 10:18:51 $
 # Last checked in by: $Author: starritt $
 #
 # This file is part of the EPICS QT Framework, initially developed at the Australian Synchrotron.
@@ -35,7 +35,7 @@
 #
 TOP=../..
 
-message ("QT_MAJOR_VERSION = " $$QT_MAJOR_VERSION )
+message ("QT_VERSION = "$$QT_MAJOR_VERSION"."$$QT_MINOR_VERSION"."$$QT_PATCH_VERSION )
 
 QT       += core gui xml
 

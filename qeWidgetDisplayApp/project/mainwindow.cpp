@@ -3,7 +3,7 @@
  *  This file is part of the EPICS QT Framework, initially developed at the
  *  Australian Synchrotron.
  *
- *  Copyright (c) 2014-2021 Australian Synchrotron
+ *  Copyright (c) 2014-2023 Australian Synchrotron
  *
  *  The EPICS QT Framework is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU Lesser General Public License as published by
@@ -105,9 +105,9 @@ void MainWindow::createQELabel()
     // (below) redundant.
 //    qel->setDisplayAlarmStateOption( standardProperties::DISPLAY_ALARM_STATE_ALWAYS );
 
-    // Set the background to blue
+    // Set the background/base to blue
     QPalette Pal(palette());
-    Pal.setColor(QPalette::Background, Qt::blue );
+    Pal.setColor(QPalette::Base, Qt::blue );
     qel->setAutoFillBackground(true);
     qel->setPalette(Pal);
 
