@@ -3,7 +3,7 @@
  *  This file is part of the EPICS QT Framework, initially developed at the
  *  Australian Synchrotron.
  *
- *  Copyright (c) 2014-2023 Australian Synchrotron
+ *  Copyright (c) 2014-2024 Australian Synchrotron
  *
  *  The EPICS QT Framework is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU Lesser General Public License as published by
@@ -30,6 +30,7 @@
 
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include <QEEnums.h>
 #include "QELabel.h"
 #include "QEComboBox.h"
 #include "QEPushButton.h"
@@ -97,7 +98,7 @@ void MainWindow::createQELabel()
     // Don't display the alarm state unless it is actually in alarm.
     // This is done by setting the background colour and
     // we will be setting the background ourselves and don't want it overwritten unless nessesary
-    qel->setDisplayAlarmStateOption( standardProperties::DISPLAY_ALARM_STATE_WHEN_IN_ALARM );
+    qel->setDisplayAlarmStateOption( QE::WhenInAlarm );
 
     // Display alarm state option 3.
     // Always display display the alarm state even when the current alarm state is 'No Alarm'.
@@ -227,7 +228,7 @@ void MainWindow::createQEComboBox()
 
     // Don't display the alarm state. This is done by setting the background colour and
     // we will be setting the background ourselves and don't want it overwritten
-    qecb->setDisplayAlarmStateOption ( standardProperties::DISPLAY_ALARM_STATE_NEVER );
+    qecb->setDisplayAlarmStateOption ( QE::Never );
 
     // Set the variable name using the access function for the variable name property.
     // This will activate the widget using the variable name and the current macro substitutions.
@@ -368,3 +369,5 @@ void MainWindow::requestAction( const QEActionRequests& request )
         }
     }
 }
+
+// end
