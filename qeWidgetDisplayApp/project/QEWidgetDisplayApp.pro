@@ -1,7 +1,6 @@
-# $File: //ASP/tec/gui/qeWidgetDisplay/trunk/qeWidgetDisplayApp/project/QEWidgetDisplayApp.pro $
-# $Revision: #4 $
-# $DateTime: 2023/08/09 10:18:51 $
-# Last checked in by: $Author: starritt $
+# File: qeWidgetDisplayApp/project/QEWidgetDisplayApp.pro
+# DateTime: Mon May 26 17:14:10 2025
+# Last checked in by: starritt
 #
 # This file is part of the EPICS QT Framework, initially developed at the Australian Synchrotron.
 #
